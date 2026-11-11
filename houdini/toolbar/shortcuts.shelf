@@ -7,5 +7,51 @@
 
   <toolshelf name="KA_hTools" label="KA Shortcuts">
     <memberTool name="toggle_updates"/>
+    <memberTool name="open_HIP"/>
+    <memberTool name="quick_null"/>
+    <memberTool name="quick_object_merge"/>
   </toolshelf>
+
+  <tool name="toggle_updates" label="Toggle Updates" icon="$KA_hTools/houdini/config/Icons/toggle-right.svg">
+    <script scriptType="python"><![CDATA[import ka_htools as ka
+from ka_htools import tools
+
+ka.tools.toggle_updates()]]></script>
+  </tool>
+
+  <tool name="quick_null" label="Quick Null" icon="COMMON_null">
+    <script scriptType="python"><![CDATA[import ka_htools as ka
+from ka_htools import *
+
+ka.tools.quick_nodes.null()]]></script>
+  </tool>
+
+  <tool name="open_HIP" label="Open HIP" icon="DATATYPES_styles_folder">
+    <toolMenuContext name="network">
+      <contextNetType>OBJ</contextNetType>
+      <contextNetType>SOP</contextNetType>
+      <contextNetType>CHOP</contextNetType>
+      <contextNetType>ROP</contextNetType>
+      <contextNetType>SHOP</contextNetType>
+      <contextNetType>COP2</contextNetType>
+      <contextNetType>VOP</contextNetType>
+      <contextNetType>VOPNET</contextNetType>
+      <contextNetType>DOP</contextNetType>
+      <contextNetType>TOP</contextNetType>
+      <contextNetType>LOP</contextNetType>
+      <contextNetType>COP</contextNetType>
+    </toolMenuContext>
+    <toolSubmenu>/KA_Utils/Open HIP</toolSubmenu>
+    <script scriptType="python"><![CDATA[import ka_htools as ka
+from ka_htools import tools
+
+ka.tools.open_hip()]]></script>
+  </tool>
+
+  <tool name="quick_object_merge" label="Quick Obj Merge" icon="SOP_object_merge">
+    <script scriptType="python"><![CDATA[import ka_htools as ka
+from ka_htools import *
+
+ka.tools.quick_nodes.obj_merge()]]></script>
+  </tool>
 </shelfDocument>
