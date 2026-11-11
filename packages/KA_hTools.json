@@ -1,0 +1,22 @@
+{
+    "env": [
+        {
+            "KA_hTools": "C:\\Docs\\_tools\\KA_hTools"
+        },
+
+        {
+            "HOUDINI_PATH": {
+                "value": "$KA_hTools/houdini",
+                "method": "append"
+            }
+        },
+
+        {
+            "PYTHONPATH": {
+                "value": "$KA_hTools/python",
+                "method": "append"
+            }
+
+        }
+    ]
+}
