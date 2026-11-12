@@ -10,6 +10,7 @@
     <memberTool name="open_HIP"/>
     <memberTool name="quick_null"/>
     <memberTool name="quick_object_merge"/>
+    <memberTool name="quick_output"/>
   </toolshelf>
 
   <tool name="toggle_updates" label="Toggle Updates" icon="$KA_hTools/houdini/config/Icons/toggle-right.svg">
