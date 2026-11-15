@@ -1,3 +1,5 @@
+import hou
+
 def main():
     net_editor = hou.ui.paneTabOfType(hou.paneTabType.NetworkEditor)
     ctx = net_editor.pwd()

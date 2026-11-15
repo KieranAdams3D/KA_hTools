@@ -24,7 +24,7 @@ ka.tools.toggle_updates()]]></script>
     <script scriptType="python"><![CDATA[import ka_htools as ka
 from ka_htools import *
 
-ka.tools.quick_nodes.null()]]></script>
+ka.tools.quick_null()]]></script>
   </tool>
 
   <tool name="open_HIP" label="Open HIP" icon="DATATYPES_styles_folder">
@@ -53,6 +53,6 @@ ka.tools.open_hip()]]></script>
     <script scriptType="python"><![CDATA[import ka_htools as ka
 from ka_htools import *
 
-ka.tools.quick_nodes.obj_merge()]]></script>
+ka.tools.quick_obj_merge()]]></script>
   </tool>
 </shelfDocument>
